@@ -36,8 +36,11 @@ function buttonClicked() {
     document.getElementById("output").innerHTML =
   "Your triangle is an scalene"
   console.log("scalene")
-  } else 
+  } else {
   document.getElementById("output").innerHTML =
   "Somthing went wrong..."
   console.log("error")
+  }
+  
 }
+
