@@ -23,23 +23,31 @@ function buttonClicked() {
   const sideb = parseInt(document.getElementById('side-b').value)
   const sidec = parseInt(document.getElementById('side-c').value)
 
-  if (sidea == sideb && sideb == sidec && sidec == sidea) {
-    document.getElementById("output").innerHTML =
-  "Your triangle is an equilateral"
-  console.log("equilateral")
-  } else if (sidea == sideb || sideb == sidec || sidec == sidea) {
-    document.getElementById("output").innerHTML =
-  "Your triangle is an isosceles"
-  console.log("isosceles")
-  } else if (sidea != sideb && sideb != sidec && sidec != sidea) {
-    document.getElementById("output").innerHTML =
-  "Your triangle is an scalene"
-  console.log("scalene")
-  } else {
+  if (sidea <= 0 || sideb <= 0 || sidec <= 0 ) {
   document.getElementById("output").innerHTML =
   "Somthing went wrong..."
   console.log("error")
-  }
-  
-}
+  } else {
 
+    if (sidea == sideb && sideb == sidec && sidec == sidea) {
+    document.getElementById("output").innerHTML =
+    "Your triangle is an equilateral"
+    console.log("equilateral")
+    } else if (sidea == sideb || sideb == sidec || sidec == sidea) {
+    document.getElementById("output").innerHTML =
+    "Your triangle is an isosceles"
+    console.log("isosceles")
+    } else if (sidea != sideb && sideb != sidec && sidec != sidea) {
+    document.getElementById("output").innerHTML =
+    "Your triangle is an scalene"
+    console.log("scalene")
+    } else {
+    document.getElementById("output").innerHTML =
+    "Somthing went wrong..."
+    console.log("error")
+
+    }
+
+  }
+
+}
