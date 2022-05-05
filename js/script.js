@@ -23,7 +23,6 @@ function buttonClicked() {
   const sideb = parseInt(document.getElementById('side-b').value)
   const sidec = parseInt(document.getElementById('side-c').value)
 
-
   if (sidea == sideb && sideb == sidec && sidec == sidea) {
     document.getElementById("output").innerHTML =
   "Your triangle is an equilateral"
